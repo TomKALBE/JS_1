@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		const tab = ["a","r","k"];
+		function random(a){
+			let size = a.length;
+			if (typeof a === 'string') {
+				console.log("Vous devez passer un tableau en parametre");
+			}else if(size <= 0){
+				console.log("[]")
+			}else{
+				console.log(a[getRandomInt(size)]);
+			}
+		}
+		random(tab)
+		function getRandomInt(max) {
+		  return Math.floor(Math.random() * max);
+		}
+	</script>
+</body>
+</html>

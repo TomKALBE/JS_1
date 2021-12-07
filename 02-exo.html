@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findChar (chaine,char){
+            tab = [...chaine.toUpperCase()];
+            let result = tab.filter(c => c == char.toUpperCase())
+            
+            if(result.length > 0)
+                return result.length 
+            else return 0;       
+        }
+        console.log(findChar("bonjour","o"))
+        console.log(findChar("bonjour","O"))
+        console.log(findChar("hello les amis","o"))
+        console.log(findChar("hello les amis","z"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		const tab = ["a", "b","a"];
+		const tab2 = ["a", "d","b","a"];
+
+		function union(tab,tab2){
+			let tmp = tab.concat(tab2);
+			let tab3 = tmp.filter(function (item, pos) {return tmp.indexOf(item) == pos});
+			console.log(tab3)
+		}
+
+		union(tab,tab2)
+		
+	</script>
+</body>
+</html>

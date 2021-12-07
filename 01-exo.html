@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const chaine1 = "bonjour";
+        const chaine2 = "hello henry";
+        const chaine3 = "coucou";
+
+        function findChar (chaine){
+            let tab = [...chaine];
+            for (let index = 0; index < chaine1.length; index++) {
+                let result = tab.filter(c => c == tab[index])
+                if(result.length == 1)
+                    return result[0]
+            }
+            return null
+        }
+        
+        console.log(findChar(chaine1));
+        console.log(findChar(chaine2));
+        console.log(findChar(chaine3));
+       
+    </script>
+</body>
+</html>
